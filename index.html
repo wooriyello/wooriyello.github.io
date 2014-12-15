@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
 
@@ -52,7 +52,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="index.html">사이트단위</a>
-                <a class="navbar-brand" href="index2.html">기능단위</a>
+                <!-- <a class="navbar-brand" href="index2.html">기능단위</a> -->
             </div>
             <!-- /.navbar-header -->
 
@@ -114,7 +114,8 @@
                                     <a href="#" data-menu="front-member">회원 </a>
                                 </li>
                                 <li>
-                                    <a href="#">펜션 <span class="fa arrow"></span></a>
+                                    <a href="#" data-menu="front-pension">펜션</a>
+                                    <!-- <a href="#">펜션 <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
                                             <a href="#" data-menu="front-pension-main">메인</a>
@@ -128,10 +129,11 @@
                                         <li>
                                             <a href="#" data-menu="front-pension-search">검색</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li>
-                                    <a href="#">예약 <span class="fa arrow"></span></a>
+                                    <a href="#" data-menu="front-reserve">예약</a>
+                                    <!-- <a href="#">예약 <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
                                             <a href="#" data-menu="front-reserve">예약하기</a>
@@ -142,10 +144,11 @@
                                         <li>
                                             <a href="#" data-menu="front-reserve-mypage">마이페이지</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                                 <li>
-                                    <a href="#">기타 <span class="fa arrow"></span></a>
+                                    <a href="#" data-menu="front-etc">기타</a>
+                                    <!-- <a href="#">기타 <span class="fa arrow"></span></a>
                                     <ul class="nav nav-third-level">
                                         <li>
                                             <a href="#" data-menu="front-etc-ext">외부연동</a>
@@ -165,7 +168,7 @@
                                         <li>
                                             <a href="#" data-menu="front-etc-etc">기타</a>
                                         </li>
-                                    </ul>
+                                    </ul> -->
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
@@ -180,13 +183,14 @@
                             <!-- /.nav-second-level -->
                         </li>
                         <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> API<span class="fa arrow"></span></a>
+                            <a href="#" data-menu="api"><i class="fa fa-sitemap fa-fw"></i> API</a>
+                            <!-- <a href="#"><i class="fa fa-sitemap fa-fw"></i> API<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="#">옥션</a>
+                                    <a href="#" data-menu="auction">옥션</a>
                                 </li>
                                 <li>
-                                    <a href="#">이지웰</a>
+                                    <a href="#" data-menu="ezwel">이지웰</a>
                                 </li>
                                 <li>
                                     <a href="#">ilikeclick</a>
@@ -194,8 +198,11 @@
                                 <li>
                                     <a href="#">기타</a>
                                 </li>
-                            </ul>
+                            </ul> -->
                             <!-- /.nav-second-level -->
+                        </li>
+                        <li>
+                            <a><i class="fa fa-sitemap fa-fw"></i> BATCH</a>
                         </li>
                     </ul>
                 </div>
@@ -229,27 +236,27 @@
                                     <tbody>
                                         <tr>
                                             <td>우리펜션 Admin</td>
-                                            <td><a href="http://admin.wooripension.com/woori_scm/">http://admin.wooripension.com/woori_scm/</a></td>
+                                            <td><a href="http://admin.wooripension.com/woori_scm/" target="_blank">http://admin.wooripension.com/woori_scm/</a></td>
                                             <td>우리펜션 어드민(운영&CS)</td>
                                         </tr>
                                         <tr>
                                             <td>업주 Admin</td>
-                                            <td><a href="http://www.wooripension.com/singly_admin/">http://www.wooripension.com/singly_admin/</a></td>
+                                            <td><a href="http://www.wooripension.com/singly_admin/" target="_blank">http://www.wooripension.com/singly_admin/</a></td>
                                             <td>업주 어드민</td>
                                         </tr>
                                         <tr>
                                             <td>CP사 Admin</td>
-                                            <td><a href="http://www.wooripension.com/allatmall/">http://www.wooripension.com/allatmall/</a></td>
+                                            <td><a href="http://www.wooripension.com/allatmall/" target="_blank">http://www.wooripension.com/allatmall/</a></td>
                                             <td>CP사 어드민</td>
                                         </tr>
                                         <tr>
                                             <td>프론트</td>
-                                            <td><a href="http://www.wooripension.com/">http://www.wooripension.com/</a></td>
+                                            <td><a href="http://www.wooripension.com/" target="_blank">http://www.wooripension.com/</a></td>
                                             <td>우리펜션 사이트</td>
                                         </tr>
                                         <tr>
                                             <td>모바일</td>
-                                            <td><a href="http://m.wooripension.com/">http://m.wooripension.com/</a></td>
+                                            <td><a href="http://m.wooripension.com/" target="_blank">http://m.wooripension.com/</a></td>
                                             <td>모바일 사이트</td>
                                         </tr>
                                         <tr>
@@ -766,53 +773,35 @@
                 </div>
             </div>
 
-            <div class="row" data-contents="front-pension-main" style="display:none;">
+            <div class="row" data-contents="front-pension" style="display:none;">
                 <div class="col-lg-12">
-                    <h3 class="page-header">프론트 > 펜션 > 메인</h3>
+                    <h3 class="page-header">프론트 > 펜션</h3>
                 </div>
 
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <!-- .panel-heading -->
                         <div class="panel-body">
-                            <div class="panel-group" id="front-pension-main">
+                            <div class="panel-group" id="front-pension">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#front-pension-main" href="#f-p-m-1">메인</a>
+                                            <a data-toggle="collapse" data-parent="#front-pension" href="#f-p-1">메인</a>
                                         </h4>
                                     </div>
-                                    <div id="f-p-m-1" class="panel-collapse collapse in">
+                                    <div id="f-p-1" class="panel-collapse collapse in">
                                         <div class="panel-body">
                                             <li>프론트 메인</li>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- .panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-            </div>
-
-            <div class="row" data-contents="front-pension-list" style="display:none;">
-                <div class="col-lg-12">
-                    <h3 class="page-header">프론트 > 펜션 > 리스트</h3>
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <!-- .panel-heading -->
-                        <div class="panel-body">
-                            <div class="panel-group" id="front-pension-list">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#front-pension-list" href="#f-p-l-1">리스트</a>
+                                            <a data-toggle="collapse" data-parent="#front-pension" href="#f-p-2">리스트</a>
                                         </h4>
                                     </div>
-                                    <div id="f-p-l-1" class="panel-collapse collapse in">
+                                    <div id="f-p-2" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <li>긴급특가</li>
                                             <li>독채/워크샵펜션</li>
@@ -822,31 +811,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                        </div>
-                        <!-- .panel-body -->
-                    </div>
-                    <!-- /.panel -->
-                </div>
-            </div>
-
-            <div class="row" data-contents="front-pension-detail" style="display:none;">
-                <div class="col-lg-12">
-                    <h3 class="page-header">프론트 > 펜션 > 상세</h3>
-                </div>
-
-                <div class="col-lg-12">
-                    <div class="panel panel-default">
-                        <!-- .panel-heading -->
-                        <div class="panel-body">
-                            <div class="panel-group" id="front-pension-detail">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#front-pension-detail" href="#f-p-d-1">상세</a>
+                                            <a data-toggle="collapse" data-parent="#front-pension" href="#f-p-3">상세</a>
                                         </h4>
                                     </div>
-                                    <div id="f-p-d-1" class="panel-collapse collapse in">
+                                    <div id="f-p-3" class="panel-collapse collapse">
                                         <div class="panel-body">
                                             <li>펜션상세</li>
                                             <li>펜션상세 객실위치</li>
@@ -859,6 +830,21 @@
                                             <li>비교바구니</li>
                                             <li>찾아가는길 인쇄하기</li>
                                             <li>펜션미리보기 팝업 이용후기</li>
+                                            <li>펜션찜하기</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-pension" href="#f-p-4">검색</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-p-4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>상단검색</li>
+                                            <li>검색바</li>
+                                            <li>빈방검색</li>
                                         </div>
                                     </div>
                                 </div>
@@ -870,28 +856,256 @@
                 </div>
             </div>
 
-            <div class="row" data-contents="front-pension-search" style="display:none;">
+            <div class="row" data-contents="front-reserve" style="display:none;">
                 <div class="col-lg-12">
-                    <h3 class="page-header">프론트 > 펜션 > 검색</h3>
+                    <h3 class="page-header">프론트 > 예약</h3>
                 </div>
 
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <!-- .panel-heading -->
                         <div class="panel-body">
-                            <div class="panel-group" id="front-pension-search">
+                            <div class="panel-group" id="front-reserve">
                                 <div class="panel panel-default">
                                     <div class="panel-heading">
                                         <h4 class="panel-title">
-                                            <a data-toggle="collapse" data-parent="#front-pension-search" href="#f-p-s-1">검색</a>
+                                            <a data-toggle="collapse" data-parent="#front-reserve" href="#f-r-1">예약하기</a>
                                         </h4>
                                     </div>
-                                    <div id="f-p-s-1" class="panel-collapse collapse in">
+                                    <div id="f-r-1" class="panel-collapse collapse in">
                                         <div class="panel-body">
-                                            <li>상단검색</li>
-                                            <li>펜션상세 객실위치</li>
-                                            <li>펜션상세 실시간예약현황</li>
-                                            <li>펜션상세 찾아오는길</li>
+                                            <li>예약달력</li>
+                                            <li>예약현황보기</li>
+                                            <li>예약하기</li>
+                                            <li>객실요금계산</li>
+                                            <li>공지팝업</li>
+                                            <li>쿠폰발행/사용</li>
+                                            <li>PG결제처리(allat)</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-reserve" href="#f-r-2">예약확인/취소</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-r-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>예약확인 및 취소</li>
+                                            <li>결제방법 변경</li>
+                                            <li>이메일재발송</li>
+                                            <li>숙박확인증</li>
+                                            <li>예약취소(수수료계산)</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-reserve" href="#f-r-3">마이페이지</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-r-3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>예약현황</li>
+                                            <li>예약상세</li>
+                                            <li>비회원 예약현황/상세</li>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="front-etc" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">프론트 > 기타</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="front-etc">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-etc" href="#f-e-1">외부연동</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-e-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>바베큐엔조이</li>
+                                            <li>바베큐엔조이 예약확인 및 취소</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-etc" href="#f-e-2">이벤트</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-e-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>리스트</li>
+                                            <li>상세</li>
+                                            <li>SNS</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-etc" href="#f-e-3">커뮤니티</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-e-3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>우리펜션뉴스</li>
+                                            <li>펜션공지사항</li>
+                                            <li>Q&A</li>
+                                            <li>1:1상담하기</li>
+                                            <li>이용후기</li>
+                                            <li>포토게시판</li>
+                                            <li>축제정보</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-etc" href="#f-e-4">고객센터</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-e-4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>공지사항</li>
+                                            <li>1:1상담하기</li>
+                                            <li>회원가입</li>
+                                            <li>펜션예약안내</li>
+                                            <li>펜션이용안내</li>
+                                            <li>펜션에티켓 및 주의사항</li>
+                                            <li>개인정보취급방침</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-etc" href="#f-e-5">회사소개</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-e-5" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>회사연혁</li>
+                                            <li>사업영역</li>
+                                            <li>가맹조건</li>
+                                            <li>가맹신청</li>
+                                            <li>제휴문의</li>
+                                            <li>광고문의</li>
+                                            <li>오시는길</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#front-etc" href="#f-e-6">기타</a>
+                                        </h4>
+                                    </div>
+                                    <div id="f-e-6" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>캡챠</li>
+                                            <li>공통팝업 레이아웃</li>
+                                            <li>씨씨할인마트 팝업</li>
+                                            <li>이용약관 팝업</li>
+                                            <li>저작권안내 팝업</li>
+                                            <li>주소검색</li>
+                                            <li>파일다운로드</li>
+                                            <li>핸드폰번호인증</li>
+                                            <li>검색자동완성</li>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- .panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                </div>
+            </div>
+
+            <div class="row" data-contents="api" style="display:none;">
+                <div class="col-lg-12">
+                    <h3 class="page-header">API</h3>
+                </div>
+
+                <div class="col-lg-12">
+                    <div class="panel panel-default">
+                        <!-- .panel-heading -->
+                        <div class="panel-body">
+                            <div class="panel-group" id="api">
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#api" href="#api-1">옥션</a>
+                                        </h4>
+                                    </div>
+                                    <div id="api-1" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <li>펜션정보</li>
+                                            <li>지역별펜션</li>
+                                            <li>긴급특가</li>
+                                            <li>객실정보</li>
+                                            <li>객실요금</li>
+                                            <li>예약가능여부확인</li>
+                                            <li>예약하기</li>
+                                            <li>예약취소(수수료계산)</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#api" href="#api-2">이지웰</a>
+                                        </h4>
+                                    </div>
+                                    <div id="api-2" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>펜션정보</li>
+                                            <li>객실정보</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#api" href="#api-3">ilikeclick</a>
+                                        </h4>
+                                    </div>
+                                    <div id="api-3" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>GATE</li>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="panel panel-default">
+                                    <div class="panel-heading">
+                                        <h4 class="panel-title">
+                                            <a data-toggle="collapse" data-parent="#api" href="#api-4">기타</a>
+                                        </h4>
+                                    </div>
+                                    <div id="api-4" class="panel-collapse collapse">
+                                        <div class="panel-body">
+                                            <li>펜션정보 XML</li>
+                                            <li>bridge</li>
                                         </div>
                                     </div>
                                 </div>
